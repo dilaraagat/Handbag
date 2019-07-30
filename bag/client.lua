@@ -7,10 +7,7 @@ local bagModel = "prop_ld_case_01"
 local baganimDict = "missheistdocksprep1hold_cellphone"
 local baganimName = "hold_cellphone"
 local bag_net = nil
-local UI = { 
-	x =  0.000 ,
-	y = -0.001 ,
-}
+
 
 
 ---------------------------------------------------------------------------
@@ -68,17 +65,7 @@ Citizen.CreateThread(function()
 	end
 end)
 
-function Notification(message)
-	SetNotificationTextEntry("STRING")
-	AddTextComponentString(message)
-	DrawNotification(0, 1)
-end
 
-function DisplayNotification(string)
-	SetTextComponentFormat("STRING")
-	AddTextComponentString(string)
-    DisplayHelpTextFromStringLabel(0, 0, 1, -1)
-end
 
 
 --- BASINI DA CAL OROSPUCOCUGU
