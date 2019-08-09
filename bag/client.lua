@@ -13,6 +13,10 @@ local bag_net = nil
 ---------------------------------------------------------------------------
 --canta cikarma --
 ---------------------------------------------------------------------------
+RegisterCommand("bag", function()
+    TriggerEvent("Bag:ToggleBag")
+end, false)
+
 RegisterNetEvent("Bag:ToggleBag")
 AddEventHandler("Bag:ToggleBag", function()
     if not holdingBag then
